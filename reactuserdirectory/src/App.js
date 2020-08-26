@@ -3,10 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import SearchForm from "./components/SearchForm"
 import EmployeeCard from "./components/EmployeeCard"
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
+     <NavBar />
      <SearchForm />
      <EmployeeCard />
     </div>
