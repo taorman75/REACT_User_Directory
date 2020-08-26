@@ -15,7 +15,8 @@ class SearchResultContainer extends Component {
       { name: "Name", width: "10%"},
       { name: "Phone", width: "20%"},
       { name: "Email", width: "20%"},
-      { name: "DOB", width: "10%"}
+      { name: "DOB", width: "10%"},
+      { name: "location", width: "10%"}
   ]
 
   handleSort = heading => {
