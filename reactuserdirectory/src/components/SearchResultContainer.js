@@ -100,7 +100,7 @@ class SearchResultContainer extends Component {
   
   handleFormSubmit = event => {
     event.preventDefault();
-    this.searchUsers(this.state.search);
+    this.searchEmployees(this.state.search);
   };
 
   render() {

@@ -10,6 +10,7 @@ function ResultList(props) {
                 <th>Email</th>
                 <th>Phone</th>
                 <th>DOB</th>
+                <th>Location</th>
             </tr>
         </thead>
         <tbody className="">
@@ -19,7 +20,7 @@ function ResultList(props) {
                     <td className="align-middle">{result.email}</td>
                     <td className="align-middle">{result.phone}</td>
                     <td className="align-middle">{result.dob.date}</td>
-                    <td className="align-middle">{result.location}</td>
+                    <td className="align-middle">{result.location.city}</td>
 
                 </tr>
             ))}

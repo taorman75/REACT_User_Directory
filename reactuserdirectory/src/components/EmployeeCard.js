@@ -8,7 +8,7 @@ function EmployeeCard(props) {
             <td>{props.phone}</td>
             <td>{props.email}</td>
             <td>{props.dob}</td>
-            <td>{props.location}</td>
+            <td>{props.location.city}</td>
         </tr>
     );
 
