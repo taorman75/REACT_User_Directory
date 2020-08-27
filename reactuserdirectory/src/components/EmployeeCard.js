@@ -1,19 +1,28 @@
-import React from "react";
-import employees from "../utils/api"
+import React, { Component } from "react";
+//import React from "react";
+import searchEmployees from "../utils/api"
 
-function EmployeeCard(props) {
-    return (
-        <>
-        <tr>
-            <th scope="row"><img alt= {props.firstName} src= {props.picture} /></th>
-            <td>{props.firstName} {props.lastName}</td>
-            <td>{props.phone}</td>
-            <td>{props.email}</td>
-            <td>{props.dob}</td>
-            <td>{props.location}</td>
-        </tr>
-        </>
-    );
 
-}
+
+function EmployeeCard (props) {
+    
+        return (
+            <>
+            <h1> Employees</h1>
+            <tr>
+                <th scope="row"><img alt= {props.firstName} src= {props.picture} /></th>
+                <td className= "col-md-3">{props.firstName} {props.lastName}</td>
+                <td className="col-md-3">{props.phone}</td>
+                <td className="col-md-3">{props.email}</td>
+                <td className="col-md-3">{props.dob}</td>  
+            </tr>
+            </>
+        );
+    
+    }
+
+
+
+
+
 export default EmployeeCard;

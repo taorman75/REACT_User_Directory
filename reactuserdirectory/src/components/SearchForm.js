@@ -6,7 +6,7 @@ function SearchForm(props) {
   return (
     <form className="search">
       <div className="form-group">
-        <label htmlFor="employee">Employee Name</label>
+        
         <input
           value={props.searchEmployees}
           onChange={props.handleInputChange}
@@ -17,11 +17,7 @@ function SearchForm(props) {
           placeholder="Type in an employee name"
           id="search"
         />
-        {/* <datalist id="employees">
-          {props.employees.map(employee => (
-            <option value={employee} key={email} />
-          ))}
-        </datalist> */}
+        
         <button type="submit" onClick={props.handleFormSubmit} className="btn btn-success">
           Search
         </button>
