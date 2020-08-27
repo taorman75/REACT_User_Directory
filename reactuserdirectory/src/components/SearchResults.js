@@ -24,13 +24,13 @@ export default class SearchResults extends Component {
     .catch(err => console.log(err));
   }
 
-  searchEmployees = query => {
-    API.search(query)
-    console.log(res)
+  // searchEmployees = query => {
+  //   API.search(query)
+  //   console.log(res)
     
-      .then(res => this.setState({ result: res.data }))
-      .catch(err => console.log(err));
-  };
+  //     .then(res => this.setState({ result: res.data }))
+  //     .catch(err => console.log(err));
+  // };
 
   handleInputChange = event => {
     const value = event.target.value;
